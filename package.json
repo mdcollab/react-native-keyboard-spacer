@@ -1,5 +1,5 @@
 {
-  "name": "react-native-keyboard-spacer",
+  "name": "react-native-keyboard-spacer-physicalkeyboardfix",
   "version": "0.3.0",
   "description": "Plug and play react-Native keyboard spacer view.",
   "main": "KeyboardSpacer.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Andr3wHur5t/react-native-keyboard-spacer.git"
+    "url": "git+https://github.com/JaxGit/react-native-keyboard-spacer.git"
   },
   "keywords": [
     "react-component",
