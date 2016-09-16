@@ -80,12 +80,12 @@ export default class KeyboardSpacer extends Component {
       return;
     }
 
-    // get updated on rotation
     const screenHeight = Dimensions.get('window').height;
-    // when external physical keyboard is connected
-    // frames.endCoordinates.height still equals virtual keyboard height
-    // however only the keyboard toolbar is showing if there should be one
-    const keyboardSpace = (screenHeight - frames.endCoordinates.screenY) + this.props.topSpacing;
+    const screenWidth = Dimensions.get('window').width;
+    const inPortrait = screenWidth === frames.endCoordinates.width;
+    const effectiveScreenHeight = inPortrait? screenHeight: screenWidth;
+    const keyboardSpace = (effectiveScreenHeight - frames.endCoordinates.screenY) + this.props.topSpacing;
+
     this.setState({
       keyboardSpace,
       isKeyboardOpened: true
