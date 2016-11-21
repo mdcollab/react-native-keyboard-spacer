@@ -82,7 +82,7 @@ export default class KeyboardSpacer extends Component {
 
     const screenHeight = Dimensions.get('window').height;
     const screenWidth = Dimensions.get('window').width;
-    const inPortrait = screenWidth === frames.endCoordinates.width;
+    const inPortrait = Math.abs(screenWidth - frames.endCoordinates.width) < 5;
     const effectiveScreenHeight = inPortrait? screenHeight: screenWidth;
     const keyboardSpace = (effectiveScreenHeight - frames.endCoordinates.screenY) + this.props.topSpacing;
 
