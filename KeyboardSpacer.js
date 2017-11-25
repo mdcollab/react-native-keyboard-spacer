@@ -6,6 +6,7 @@ import {
   Keyboard,
   LayoutAnimation,
   View,
+  ViewPropTypes,
   Dimensions,
   Platform,
   StyleSheet
@@ -24,7 +25,7 @@ export default class KeyboardSpacer extends Component {
   static propTypes = {
     topSpacing: PropTypes.number,
     onToggle: PropTypes.func,
-    style: View.propTypes.style,
+    style: ViewPropTypes.style,
     animationConfig: PropTypes.object,
   };
 
