@@ -25,5 +25,8 @@
   "homepage": "https://github.com/Andr3wHur5t/react-native-keyboard-spacer#readme",
   "peerDependencies": {
     "prop-types": "^15.5.10"
+  },
+  "dependencies": {
+    "deprecated-react-native-prop-types": "^5.0.0"
   }
 }
