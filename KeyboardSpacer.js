@@ -6,11 +6,11 @@ import {
   Keyboard,
   LayoutAnimation,
   View,
-  ViewPropTypes,
   Dimensions,
   Platform,
   StyleSheet
 } from 'react-native';
+import {ViewPropTypes} from 'deprecated-react-native-prop-types'
 import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
